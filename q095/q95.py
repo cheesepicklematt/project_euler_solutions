@@ -37,7 +37,7 @@ maxChainLen = 30
 
 longestChain = 0
 longestChainVal = []
-for n in range(220,50_000,2):
+for n in range(220,30_000,2):
     fSum = returnFactorSum(n)
 
     amiNum = {fSum:fSum}
