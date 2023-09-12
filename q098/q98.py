@@ -49,7 +49,7 @@ for p in anagPairs:
     pList_1 = list(p[0])
     pList_2 = list(p[1])
     uniqLetters = set(pList_1)
-    
+
     tmpPerm = permDict[len(uniqLetters)]
     for tp in tmpPerm:
         mapping = {y:x for x,y in zip(tp,uniqLetters)}
@@ -58,10 +58,6 @@ for p in anagPairs:
                 sq1 = mapPList(pList_1)
                 sq2 = mapPList(pList_2)
                 anagSq.append([mapping,p,sq1,sq2])
-
-    
-
-
 
 t1 = time.time()
 
